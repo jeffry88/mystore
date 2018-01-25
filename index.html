@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="css/normalize.css" />
         <!--<link rel="stylesheet" href="css/demo.css">-->
         <link rel="stylesheet" href="css/app.css">
-
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
     </head>
@@ -56,8 +55,9 @@
                                 <li><a href="#" >注册</a></li>
                             </ul>
                         </div>
+                        <!--
                         <div style="width: 80px; height: 50px; position: relative; right: -106%; top: -31px;display:none;">
-                            <a href="#"><img src="img/user01.png" height= 40px;></a>
+                            <a href="#"><img src="img/user01.png" height = 40px;></a>
                         </div>
                     </div>
                     <!--/.navbar-collapse-->
@@ -76,17 +76,77 @@
 
             <div class="slider-img">
                 <ul class="slider-img-ul">
-                     <li><img src="img/girls_clothing.jpg"></li>
-                    <li><img src="img/girls_clothing.jpg"></li>
-                    <li><img src="img/grils_clothing3.jpg"></li>
-                    <li><img src="img/man's_clothing_02.jpg"></li>
-                     <li><img src="img/girls_clothing.jpg"></li>
-                    
+                    <li><a href="man.html"><img src="img/girls_clothing.jpg"></a></li>
+                    <li><a href="man.html"><img src="img/girls_clothing.jpg"></a></li>
+                    <li><a href="man.html"><img src="img/grils_clothing3.jpg"></a></li>
+                    <li><a href="man.html"><img src="img/man's_clothing_02.jpg"></a></li>
+                    <li><a href="man.html"><img src="img/girls_clothing.jpg"></a></li>
+
                 </ul>
             </div>
 
         </div>
         <!--</div>-->
+
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div id="box">
+                    <img src="img/blog_item_01.jpg">
+                    <img src="img/blog_item_02.jpg">
+                    <img src="img/blog_item_03.jpg">
+                    <img src="img/blog_item_04.jpg">
+                </div>
+
+
+            </div>
+        </div>
+        <div id="contact-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h4>Contact Us</h4>
+                            <div class="line-dec"></div>
+                            <p>Donec sit amet commodo arcu. Sed sit amet iaculis mi, vel fermentum nisi. Morbi dui enim, vestibulum non accumsan ac, tempor non nisl.</p>
+                            <div class="pop-button">
+                                <h4>Send us a message</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="pop">
+                            <span>✖</span>
+                            <form id="contact" action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <input name="name" class="form-control" id="name" placeholder="Your name..." required="" type="text">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <input name="email" class="form-control" id="email" placeholder="Your email..." required="" type="email">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <!--<script src="js/vendor/jquery-1.11.0.min.js" type="text/javascript"></script>-->
@@ -97,6 +157,34 @@
         <script src="js/main.js"></script>
 
         <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 100) {
+                        var box = document.getElementById("box");
+                        var aImgs = box.getElementsByTagName("img");                       
+                            for (var i = 0; i < aImgs.length; i++) {
+                                aImgs[i].className = "on";
+                            }
+                    }
+                });
+            });
+            /* $(window).scroll(function () {//为了保证兼容性，这里取两个值，哪个有值取哪一个
+             var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+             alert(scrollTOP);
+             if (scrollTop > 100) {
+             var box = document.getElementById("box");
+             var aImgs = box.getElementsByTagName("img");
+             window.onload = function () {
+             for (var i = 0; i < aImgs.length; i++) {
+             aImgs[i].className = "on";
+             }
+             
+             }
+             }
+             //scrollTop就是触发滚轮事件时滚轮的高度
+             });*/
+        </script>
         <script type="text/javascript">
             $(document).ready(function () {
                 // navigation click actions 
@@ -115,7 +203,8 @@
                     event.preventDefault();
                     $('#main-nav').toggleClass("open");
                 });
-            });
+            }
+            );
             // scroll function
             function scrollToID(id, speed) {
                 var offSet = 50;

@@ -82,7 +82,7 @@ p {
     padding: 0;
     z-index: 10000;
     transition: all 0.2s ease-in-out;
-    height: 80px;
+    height: 64px;
     background-color:transparent;  
     
     text-align: center;
@@ -303,7 +303,7 @@ bootstrap.min.css:5
 }
 
 .projects-holder {
-	padding: 30px 15px 0px 15px;
+	padding: 65px 15px 0px 15px;
 }
 
 .filter-categories {;
@@ -925,3 +925,92 @@ footer .connect-us ul li a:hover {
 	}
 
 }
+/* 图片飞入*/
+#box{
+		position: relative;
+		width: 1000px;
+		height: 490px;
+		margin:200px auto 0;
+	}
+	#box img{
+		position: absolute;
+	}
+	#box img:nth-child(1){
+		/*left:-8px;*/
+		top:-148px;
+		left:-1500px;
+	}
+	#box img:nth-child(1).on{
+		left:-70px;
+                width: 500px;
+                height: 280px;
+		transition: 0.5s 1s;
+	}
+	#box img:nth-child(2){		   
+		/*left:163px;*/
+		top:178px;
+		left:-1500px;
+	}
+	#box img:nth-child(2).on{
+		left:-70px;
+		transition: 0.5s 0.5s;
+                width:500px;
+                height: 280px;
+	}
+	/*#box img:nth-child(3){
+		left:310px;
+		top:0px;
+		animation: shake 0.8s linear;
+	}
+	@keyframes shake {
+		0%{
+			transform: scale(0);
+		}
+		30%{
+			transform: scale(1.2);
+		}
+		40%{
+			transform: scale(0.8);
+		}
+		50%{
+			transform: scale(1.15);
+		}
+		60%{
+			transform: scale(0.9);
+		}
+		70%{
+			transform: scale(1.1);
+		}
+		80%{
+			transform: scale(0.95);
+		}
+		90%{
+			transform: scale(1.05);
+		}
+		100%{
+			transform: scale(1);
+		}
+	}*/
+
+	#box img:nth-child(3){
+		/*left:510px;*/
+		top:-148px;
+		left:1500px;
+	}
+	#box img:nth-child(3).on{
+		left:570px;
+		transition: 0.5s 0.5s;
+                width: 500px;
+                height: 280px;
+	}
+	#box img:nth-child(4){
+		/*left:656px;*/
+		top:178px;
+		left:1500px;
+	}
+	#box img:nth-child(4).on{
+		left:570px;
+		transition: 0.5s 1s;
+                width:500px;
+                height: 280px;
+	}
