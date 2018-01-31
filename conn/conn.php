@@ -1,24 +1,22 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-    //本地测试
-    $host = '127.0.0.1';
-    $port = 3306;
-    $user = "root";
-    $pwd = "724993441";
-    $link = @mysql_connect("{$host}:{$port}",$user,$pwd,true);
-    if(!$link) {
-        die("Connect Server Failed: " . mysql_error());
-    }
-    else {
-        echo '连接成功！';
-    }
-    //选择连接的数据库库名
-    mysql_select_db("mystore");
-    //设置字符编码utf8
-    mysql_set_charset('utf8');
+//本地测试
+$servername = 'localhost'; //
+$username = 'root';   //用户名
+$password = '724993441'; //密码自己填
+$database = 'mystore';  //数据库名称
+// 创建连接
+
+$conn = new mysqli($servername, $username, $password, $database);
+mysqli_query($conn, 'SET NAMES utf8');
+// 检测连接
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+//echo "Connected successfully";
 ?>

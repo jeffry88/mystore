@@ -536,7 +536,7 @@ bootstrap.min.css:5
 #contact-us {
 	background-color: #596065;
 	text-align: center;
-	padding: 80px 0px;
+	padding: 30px 0px;
 }
 
 #contact-us .section-heading h4 {
@@ -932,7 +932,7 @@ footer .connect-us ul li a:hover {
 		height: 490px;
 		margin:200px auto 0;
 	}
-	#box img{
+	#box img  {
 		position: absolute;
 	}
 	#box img:nth-child(1){
@@ -940,7 +940,7 @@ footer .connect-us ul li a:hover {
 		top:-148px;
 		left:-1500px;
 	}
-	#box img:nth-child(1).on{
+	#box>a:nth-child(1)>img.on{
 		left:-70px;
                 width: 500px;
                 height: 280px;
@@ -951,8 +951,8 @@ footer .connect-us ul li a:hover {
 		top:178px;
 		left:-1500px;
 	}
-	#box img:nth-child(2).on{
-		left:-70px;
+	#box>a:nth-child(2)>img.on{
+		left:570px;
 		transition: 0.5s 0.5s;
                 width:500px;
                 height: 280px;
@@ -997,8 +997,9 @@ footer .connect-us ul li a:hover {
 		top:-148px;
 		left:1500px;
 	}
-	#box img:nth-child(3).on{
-		left:570px;
+	#box>a:nth-child(3)>img.on{
+		left:-70px;
+                top:170px;
 		transition: 0.5s 0.5s;
                 width: 500px;
                 height: 280px;
@@ -1008,8 +1009,9 @@ footer .connect-us ul li a:hover {
 		top:178px;
 		left:1500px;
 	}
-	#box img:nth-child(4).on{
+	#box>a:nth-child(4)>img.on{
 		left:570px;
+                top:170px;
 		transition: 0.5s 1s;
                 width:500px;
                 height: 280px;

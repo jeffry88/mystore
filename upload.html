@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+</head>
+<body>
+<form action="fileUpload.php" method="post" enctype="multipart/form-data">
+ 请选择你要上传的文件:
+ <input type="file" name="myFile"><br>
+ <input type="submit" value="上传文件">
+
+ <!--限制客户端上传文件的最大值 隐藏域另起一行-->
+ <!--<input type="hidden" name="MAX_FILE_SIZE" value="字节数">-->
+
+ <!--accept设置上传文件的类型-->
+ <!--<input type="file" name="myfile" accept="image/jpg,image/png,image/gif">-->
+</form>
+</body>
+</html>

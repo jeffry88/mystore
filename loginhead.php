@@ -44,15 +44,17 @@
                     <li><a href="art.php" >文艺</a></li>
                     <li><a href="children.php">儿童读物</a></li>
                 </ul>
-                <div id="main-sub-nav" style="position: relative;top:14px;">
-                    <ul class="nav navbar-nav">
-                        <!--li><a href="#" ><span class="glyphicon glyphicon-search">搜索</span></a></li-->
-                        <li><a href="#" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
-                        <li><a href="login.php">登入</a></li>
-                        <li><a href="register.php">注册</a></li>
-                    </ul>
-                </div>
-
+                    <div id="main-sub-nav" style="position: relative;left:100px;">
+                            <ul class="nav navbar-nav" style="position: relative; left: 190px;">
+                                <li style="margin-left: 25px;"><a href="#" ><span class="glyphicon glyphicon-search">搜索</span></a></li>
+                                <li style="margin-left: 25px;"><a href="#" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
+                                <li style="margin-left: 25px;"><a href="#"><img src=""/><?php echo "你好：". $_SESSION['username'];?></a></li>
+                                <li style="margin-left: 25px;"><a href="logout.php">退出</a></li>
+                                
+                            </ul>
+                        </div>
+                       
+               
             </div>
             <!--/.navbar-collapse-->
         </nav>
@@ -63,5 +65,7 @@
     <!--/.container-->
 </div>
 <!--/.header-->
-<script type="text/javascript">
-</script>
+
+
+
+
