@@ -1,4 +1,14 @@
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>jeffry的小店</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">-->
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -10,9 +20,10 @@
         <link rel="stylesheet" href="css/normalize.css" />
         <!--<link rel="stylesheet" href="css/demo.css">-->
         <link rel="stylesheet" href="css/app.css">
-
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <div class="header">
+
+    </head>
+<div class="header">
             <div class="container">
                 <nav class="navbar navbar-inverse" role="navigation">
                     <div class="navbar-header">
@@ -28,7 +39,7 @@
                     <div id="main-nav" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="index.html" class="scroll-top">主页</a></li>
-                            <li><a href="man.html">男士</a></li>
+                            <li><a href="man.php">男士</a></li>
                             <li><a href="#" class="scroll-link" data-id="portfolio">女士</a></li>
                             <li><a href="#" class="scroll-link" data-id="blog">儿童</a></li>
                             <li><a href="#" class="scroll-link" data-id="contact-us">联系我们</a></li>
@@ -37,8 +48,16 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="#" ><span class="glyphicon glyphicon-search">搜索</span></a></li>
                                 <li><a href="#" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
-                                <li><a href="#" >登入</a></li>
-                                <li><a href="#" >注册</a></li>
+                                <li><a href="login.php">登入</a></li>
+                                <li><a href="register.php" >注册</a></li>
+                            </ul>
+                        </div>
+                        <div id="main-sub-nav-login" style="position: relative;left:160px;display: none;">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" ><span class="glyphicon glyphicon-search">搜索</span></a></li>
+                                <li><a href="#" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
+                                <li><a href="login.php">登入</a></li>
+                                <li><a href="register.php" >注册</a></li>
                             </ul>
                         </div>
                         <div style="width: 80px; height: 50px; position: relative; right: -106%; top: -31px;display:none;">
@@ -54,3 +73,4 @@
             <!--/.container-->
         </div>
         <!--/.header-->
+ 

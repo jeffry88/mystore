@@ -15,7 +15,7 @@
         die("Connect Server Failed: " . mysql_error());
     }
     else {
-        echo '连接成功！';
+        //echo '连接成功！';
     }
     //选择连接的数据库库名
     mysql_select_db("mystore");
