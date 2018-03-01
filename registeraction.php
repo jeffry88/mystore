@@ -22,12 +22,12 @@ if ($password == $re_password) {
             header("Location:register.php?err=1");
         } else {
             $sql_insert = "insert into user(name,password,email)values('$username','$password','$email')";
-            mysqli_query($conn, $sql_insert);
-            header("Location:register.php?err=3");
-        }
-    mysqli_close($conn);
 } else {
     header("Location:register.php?err=2");
 }
         
     
+            mysqli_query($conn, $sql_insert);
+            header("Location:register.php?err=3");
+        }
+    mysqli_close($conn);

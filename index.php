@@ -6,6 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD (2777421) - 用户界面基本完成管理员及下单和购物车功能有待继
+=======
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+>>>>>>> 56f55e2147c327927489136152f50f23da6a4d32
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
@@ -18,6 +22,7 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+<<<<<<< HEAD (2777421) - 用户界面基本完成管理员及下单和购物车功能有待继
 
         <?php
          //session_start();
@@ -32,6 +37,9 @@
         }
        // echo $_SESSION['username'];
         ?>
+=======
+        <?php include 'header.php'; ?>
+>>>>>>> 56f55e2147c327927489136152f50f23da6a4d32
         <?php include 'turnover.php'; ?>
         <?php include 'main.php'; ?>
         <?php include 'footer.php'; ?>
@@ -43,10 +51,16 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+<<<<<<< HEAD (2777421) - 用户界面基本完成管理员及下单和购物车功能有待继
+=======
+
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>-->
+>>>>>>> 56f55e2147c327927489136152f50f23da6a4d32
         <script type="text/javascript">
             $(document).ready(function () {
                 $(window).scroll(function () {
                     if ($(window).scrollTop() > 100) {
+<<<<<<< HEAD (2777421) - 用户界面基本完成管理员及下单和购物车功能有待继
                        // var box = document.getElementById("box");
                         //var a = box.getElementsByTagName("a");
                         var aImgs = $('#box img');
@@ -54,6 +68,12 @@
                         console.log(aImgs.length);
                         for (var i = 0; i < aImgs.length; i++) {
                             $(aImgs[i]).addClass("on");
+=======
+                        var box = document.getElementById("box");
+                        var aImgs = box.getElementsByTagName("img");
+                        for (var i = 0; i < aImgs.length; i++) {
+                            aImgs[i].className = "on";
+>>>>>>> 56f55e2147c327927489136152f50f23da6a4d32
                         }
                     }
                 });
