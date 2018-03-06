@@ -27,12 +27,6 @@
     <div class="container">
         <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
-                <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                    <span class="sr-only">Jeffry</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
                 <a href="index.php" class="navbar-brand scroll-top"><em>J</em>store</a>
             </div>
             <!--/.navbar-header-->

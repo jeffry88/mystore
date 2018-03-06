@@ -1,107 +1,203 @@
 @charset "utf-8";
 /* CSS Document */
 html{
-	font-size:62.5%; /* 10÷16=62.5% */}
+    font-size:62.5%; /* 10÷16=62.5% */}
 body{
-	
-	background:#F8F8F8;
-	font-family:"宋体";}
+
+    background:#F8F8F8;
+    font-family:"宋体";}
 .sidebar ul{
-	width:180px;
-	margin:0 auto;
-	background:#fff;
-	position:relative;
-	z-index:0;
-	padding:60px 20px 190px;}
+    width:180px;
+    margin:0 auto;
+    background:#fff;
+    position:relative;
+    z-index:0;
+    padding:60px 20px 190px;}
 .sidebar ul li{
-	height:40px;
-	line-height:40px;
-	text-align:center;
-	border-bottom:1px solid #F8F8F8;}	
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    border-bottom:1px solid #F8F8F8;}	
 .sidebar ul li a{
-	color:#666;
-	display:block;}	
+    color:#666;
+    display:block;}	
 .sidebar ul li a:hover{
-	color:#FF5F3E;
-	text-decoration:none;}	
+    color:#FF5F3E;
+    text-decoration:none;}	
 .sidebar ul li a.hover{color:#FF5F3E;}	
 #lanPos{
-	width:225px;
-	height:40px;
-	line-height:40px;
-	background:#F8F8F8;
-	border-left:5px solid #FF5F3E;
-	position:absolute;
-	left:-5px;
-	top:0;
-	z-index:-1;
-	transition:top .2s;}
+    width:225px;
+    height:40px;
+    line-height:40px;
+    background:#F8F8F8;
+    border-left:5px solid #FF5F3E;
+    position:absolute;
+    left:-5px;
+    top:0;
+    z-index:-1;
+    transition:top .2s;}
 #product-header{
-    left:540px;
+    left:427px;
     position:relative;
     top:10px;
-   
+
 }
 #product-header li{
     margin-left: 10px;
-    
+
 }
 .navbar-nav > li > a{
     color: #666 !important;
 }
 /*搜索框*/
 /*.bar1 {
-	background: #A3D0C3;
+        background: #A3D0C3;
 }*/
 
 .bar1 input {
-	border: 2px solid #7BA7AB;
-	border-radius: 5px;
-	background: #FFF;
-	color: #9E9C9C;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    background: #FFF;
+    color: #9E9C9C;
 }
 
 .bar1 button {
-	top: 0;
-	right: 0;
-	background: #7BA7AB;
-	border-radius: 0 5px 5px 0;
+    top: 0;
+    right: 0;
+    background: #7BA7AB;
+    border-radius: 0 5px 5px 0;
 }
 
 .bar1 button:before {
-	content: "\f002";
-	font-family: FontAwesome;
-	font-size: 16px;
-	color: #F9F0DA;
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
 }
 div.search {
-	padding: 6px 0;
-        position: relative;
-        left: -100px;
-        float: left;
-        width: 23%;
+    padding: 6px 0;
+    position: relative;
+    left: -100px;
+    float: left;
+    width: 23%;
 }
 
 form {
-	position: relative;
-	width: 480px;
-	margin: 0 auto;
+    position: relative;
+    width: 480px;
+    margin: 0 auto;
 }
 
 input, button {
-	border: none;
-	outline: none;
+    border: none;
+    outline: none;
 }
 
 input {
-	width: 100%;
-	height: 42px;
-	padding-left: 13px;
+    width: 100%;
+    height: 42px;
+    padding-left: 13px;
 }
 
 button {
-	height: 42px;
-	width: 42px;
-	cursor: pointer;
-	position: absolute;
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    position: absolute;
+}
+.heade{
+    width: 100%;
+    display: contents;
+}
+.product_img{
+    width: 38%;
+    float: left;
+}
+.product_description{
+    width:50%;
+    float:left;
+    right: 10px;
+    position:relative;
+}
+.heade .navbar-brand{
+    color: #121212!important;
+}
+.heade .navbar-nav>a{
+    color: #121212!important;
+}
+.main{
+
+    position: relative;
+    top: 65px;
+}
+.clear{
+    clear:both;
+    height: 0;
+    line-height: 0;
+    font-size: 0
+}
+.product_pri{
+    position: relative;
+    top:95px;
+}
+.product_pri>p{
+    font-size:22px;
+    color: #f6040f
+}
+.buy_box_button {
+    float: left;
+    width: 567px;
+    position: relative;
+    top: 175px;
+}
+
+.product_description .buy_box_button a.btn
+{
+    height: 36px;
+    font: 16px/36px "Microsoft Yahei";
+    overflow: hidden;
+    margin: 0 0 3px 10px;
+    float: left;
+    padding: 0 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.product_description .buy_box_button a.btn:hover 
+{
+    height: 36px;
+    font: 16px/36px "Microsoft Yahei";
+    overflow: hidden;
+    margin: 0 0 3px 10px;
+    float: left;
+    padding: 0 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color:#f6040f;
+    color: #fff;
+}
+.product_description .buy_box_button a.buy_now_btn
+{
+    height: 36px;
+    font: 16px/36px "Microsoft Yahei";
+    overflow: hidden;
+    margin: 0 0 3px 10px;
+    float: left;
+    padding: 0 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff; 
+}
+a.btn_b_red{
+    border: 1px solid #ff2832;
+    color: #ff2832!important;
+    background-color: #ffedee;
+}
+a.btn_b_red:hover{
+  background-color: #f8babe;  
+}
+
+a.btn_red {
+    background-color: #ff2832;
 }

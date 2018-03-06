@@ -35,9 +35,9 @@ and open the template in the editor.
                     <?php while ($row = mysqli_fetch_assoc($query)) { ?>   
                         <li>
                             <div style="">
-                                <img src="img/humanities/<?php echo $row['product_pic'] ?>" >
+                                <a href="<?php echo"product.php?id=".$row['product_id']?>"><img src="img/product/<?php echo $row['product_pic'] ?>" ></a>
                                 <p>
-                                    <a target="_blank" href=""><?php echo $row['product_name'] ?></a>
+                                    <a href="<?php echo"product.php?id=".$row['product_id']?>"><?php echo $row['product_name'] ?></a>
                                 </p>
                                 <p class="price">¥ <?php echo $row['price'] ?></p>
                             </div>
