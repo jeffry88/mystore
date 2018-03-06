@@ -8,7 +8,7 @@
  *          $myde_page - 当前页
  *          $myde_url - 获取当前的url
  * @功能:   分页实现
- * @作者:   宋海阁
+ * 
  */
 
 class page {

@@ -3,7 +3,7 @@ header("Content-Type: text/html;charset=utf-8");
 include_once("conn/conn.php");
 //$conn = mysqli_connect('localhost', 'root', '724993441', 'mystore');
 require_once('page.class.php'); //分页类  
-$showrow = 6; //一页显示的行数 
+$showrow = 12; //一页显示的行数 
 //$kind = 1;
 $curpage = empty($_GET['page']) ? 1 : $_GET['page']; //当前的页,还应该处理非数字的情况  
 $url = "?page={page}"; //分页地址，如果有检索条件 ="?page={page}&q=".$_GET['q']  

@@ -5,7 +5,7 @@
             <a href="fiction_book.php"><img src="img/fiction_book.jpg"></a>
             <a href="art.php"><img src="img/art_book.jpg"></a>
             <a href="technology.php"> <img src="img/technology_book.jpg"></a>
-            <a href="children_book.php"><img src="img/children_book.jpg"></a>
+            <a href="children.php"><img src="img/children_book.jpg"></a>
         </div>
     </div>
 </div>

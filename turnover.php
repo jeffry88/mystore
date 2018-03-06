@@ -7,7 +7,7 @@
                      <li><a href="fiction_book.php"><img src="img/homepage6.jpg"></a></li>
                     <li><a href="fiction_book.php"><img src="img/homepage6.jpg"></a></li>
                     <li><a href="manage.php"><img src="img/homepage2.jpg"></a></li>                  
-                    <li><a href="man.html"><img src="img/homepage4.jpg"></a></li>
+                    <li><a href="art.php"><img src="img/homepage4.jpg"></a></li>
                    <li><a href="fiction_book.php"><img src="img/homepage6.jpg"></a></li>
 
                 </ul>

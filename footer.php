@@ -1,47 +1,60 @@
 <div id="contact-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <h4>Contact Us</h4>
-                            <div class="line-dec"></div>
-                            <p>Donec sit amet commodo arcu. Sed sit amet iaculis mi, vel fermentum nisi. Morbi dui enim, vestibulum non accumsan ac, tempor non nisl.</p>
-                            <div class="pop-button">
-                                <h4>Send us a message</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="pop">
-                            <span>✖</span>
-                            <form id="contact" action="#" method="post">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <input name="name" class="form-control" id="name" placeholder="Your name..." required="" type="text">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <input name="email" class="form-control" id="email" placeholder="Your email..." required="" type="email">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" class="btn">Send Message</button>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="section-heading">
+                    <h4>更多图书分类</h4>
+                    <div class="line-dec"></div> 
+                    <div class="footer">
+                        <ul>
+                            <li><a  href="fiction_book.php">经典小说</a></li>                            
+                            <li><a  class="hover" href="art.php">文学艺术</a></li>
+                            <li><a href="education.php">教育图书</a></li>
+                            <li><a href="manage.php">经济管理</a></li>                            
+                            <li><a href="technology.php">科学技术</a></li>
+                            <li><a href="children.php">儿童读物</a></li>
+                            <li><a  href="humanities.php" >人文社科</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-sm-3">
+                <div class="section-heading">
+                    <h4>联系我</h4>
+                    <div class="line-dec"></div> 
+                    <div class="footer">
+                        <ul>
+                            <li><a href="https://github.com/jeffry88" title="About us">我的github</a></li>
+                            <li><a href="###" title="Contact us">邮箱：deng950209@gmail.com</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="section-heading">
+                    <h4>友情链接</h4>
+                    <div class="line-dec"></div> 
+                    <div class="footer">
+                        <ul>
+                            <li><a href="http://www.jeffry.gq" title="About us">个人网站</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="section-heading">
+                    <h4>广告位</h4>
+                    <div class="line-dec"></div> 
+                    <div class="footer">
+                        <ul>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </div>
+</div>

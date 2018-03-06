@@ -23,7 +23,7 @@ include 'page.php';
                     <?php while ($row = mysqli_fetch_assoc($query)) { ?>   
                         <li>
                             <div style="">
-                                <img src="img/art/<?php echo $row['product_pic'] ?>" >
+                                <img src="img/product/<?php echo $row['product_pic'] ?>" >
                                 <p>
                                     <a target="_blank" href=""><?php echo $row['product_name'] ?></a>
                                 </p>
