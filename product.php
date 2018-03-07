@@ -13,7 +13,7 @@
         header("Content-Type: text/html;charset=utf-8");
         include_once("conn/conn.php");
         $product_id = $_GET['id'];
-        session_start();
+        session_start(86400);
         //echo $product_id;
         $sql_product = "select * from je_product where product_id = '$product_id'";
         $res = mysqli_query($conn, $sql_product);
@@ -51,7 +51,7 @@
                             <p>特价促销：<?php echo $row['price'] ?>&nbsp;元</p>
                         </div>
                         <div class="buy_box_button">
-                            <a href="cart.php" class="btn btn_red">加入购物车</a> 
+                            <a href="<?php echo "addcart_action.php?id=".$product_id?>" class="btn btn_red">加入购物车</a> 
                             <a href="buy.php" class="buy_now_btn btn_b_red">立即购买</a>
                             <div class="clear"></div>
                         </div>
