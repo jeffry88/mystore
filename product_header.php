@@ -6,8 +6,6 @@
         </form> 
     </div> 
     <ul class="nav navbar-nav">
-        <li><a href="#" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
-        <li><a href="login.php">登入</a></li>
-        <li><a href="register.php">注册</a></li>
+        <li><a href="cart.php" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
     </ul>
 </div>

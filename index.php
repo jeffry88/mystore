@@ -1,4 +1,9 @@
-<?php session_start();?>
+<?php 
+session_start();
+ini_set('session.save_path','/php_sessions/');
+//6个钟头
+ini_set('session.gc_maxlifetime',21600);
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +12,7 @@
         <meta name="description" content="">
         <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
         <meta name="viewport" content="width=device-width, user-scalabel=no">
+        <link rel="icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">

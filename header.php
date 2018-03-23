@@ -41,7 +41,7 @@
                 <div id="main-sub-nav" style="position: relative;top:14px;">
                     <ul class="nav navbar-nav">
                         <!--li><a href="#" ><span class="glyphicon glyphicon-search">搜索</span></a></li-->
-                        <li><a href="#" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
+                        <li><a href="cart.php" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
                         <li><a href="login.php">登入</a></li>
                         <li><a href="register.php">注册</a></li>
                     </ul>

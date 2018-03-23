@@ -1,6 +1,9 @@
 <?php
 $username = isset($_POST['username']) ? $_POST['username'] : "";
 $password = isset($_POST['password']) ? $_POST['password'] : "";
+/**
+ * 面向过程的方法操作数据库
+ */
     $conn = mysqli_connect('localhost', 'root', '724993441', 'mystore');
     //include 'conn/conn.php';
     mysqli_set_charset($conn, "utf8");
