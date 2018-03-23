@@ -1,0 +1,72 @@
+.header{
+    height: 65px;
+    width: auto;
+    background: #71B6F9;
+}
+.sidebar{
+
+    width: 13%;
+    height: 100%;
+    float: left;
+    border-right:1px solid #ccc;
+}
+.main{
+    width: 85%;
+    height: 500px;
+    float: left;
+}
+.clear{
+    clear:both;
+    height: 0;
+    line-height: 0;
+    font-size: 0
+}
+.user-info{
+    float:right;
+    position: relative;
+    margin: 10px;
+    right: 5px;
+
+}
+#list{
+    width:88%;
+    height:530px;
+    margin:50px auto 2px auto;
+    position:relative
+}
+#list ul li{
+    float:left;
+    width:220px;
+    height:260px;
+    margin:2px
+}
+#list ul li img{
+    width:220px;
+    height:220px
+}
+#list ul li p{
+    line-height:22px
+}
+#pagecount{
+    width:500px;
+    margin:10px auto 2px auto;
+    padding-bottom:20px;
+    text-align:center
+}
+#pagecount span{
+    margin:4px;
+    font-size:14px
+}
+#list ul li#loading{
+    width:120px;
+    height:32px;
+    line-height:32px;
+    border:1px solid #d3d3d3;
+    position:absolute;
+    top:35%; left:42%;
+    text-align:center;
+    background:#f7f7f7 url(loading.gif) no-repeat 8px 8px;
+    -moz-box-shadow:1px 1px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,.2);
+    box-shadow:1px 1px 2px rgba(0,0,0,.2);
+}

@@ -86,6 +86,7 @@ form {
     position: relative;
     width: 480px;
     margin: 0 auto;
+    float: left;
 }
 
 input, button {
@@ -195,9 +196,110 @@ a.btn_b_red{
     background-color: #ffedee;
 }
 a.btn_b_red:hover{
-  background-color: #f8babe;  
+    background-color: #f8babe;  
 }
 
 a.btn_red {
     background-color: #ff2832;
+}
+.showcart{
+    position: relative;
+    width: 80%;
+    margin-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.showcart img{
+    height: 100px;
+}
+.showcart form{
+    width: 100%;
+}
+.showbooks{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cart_header{
+    border-bottom: 2px solid #7BA7AB;
+    height: 60px;
+    margin-top: 10px;
+}
+.category{
+    margin:25px 0;
+    width: 85%;
+    position: relative;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.category ul li{
+    display: block;
+    float:left;
+    text-align: center;
+    width: 229px;
+}
+.cart_button {
+    cursor: pointer;
+    height: 26px;
+    position: relative;
+    width: 32px;
+    background-color: #7aaaae;
+    color:#fff;
+}
+.next_btn{
+    width: 120px;
+    position: relative;
+    left: 353px;
+    margin-top: 49px;
+}
+.check_btn{
+    width: 120px;
+    position: relative;
+    left: 966px;
+    top:38px;
+}
+.sum{
+    cursor: pointer;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    width: 71%;
+}
+.mes{
+    height: auto;
+    position: relative;
+    left: 325px;
+    width: 50%;
+    margin: 60px;
+}
+div .mes li{
+    margin-top: 35px;
+}
+div .next_btn input{
+    width: 100%;
+    height: 42px;
+    padding-left: 0px;
+    background-color: #feb8b0;
+}
+div .check_btn input{
+    width: 100%;
+    height: 42px;
+    padding-left: 0px;
+    background-color: #94B7BA;
+}
+.order_mes{
+    margin: 65px;
+    text-align: left;
+}
+#cartdata{
+    position: relative;
+    left:54px;
+}
+.cartdata{
+   
+}
+div .order_mes li{
+    margin-top: 10px;
 }

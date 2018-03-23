@@ -1,6 +1,9 @@
 <?php
 header("Content-type:text/html;charset=utf-8");
-session_start(86400);
+session_start();
+ini_set('session.save_path','/php_sessions/');
+//6个钟头
+ini_set('session.gc_maxlifetime',21600);
 include_once("conn/conn.php");
 include_once 'Cart_Class.php';
 $cart = new Cart();

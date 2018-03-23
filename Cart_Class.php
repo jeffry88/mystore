@@ -32,7 +32,7 @@ class Cart {
 
         if (isset($_SESSION['cart'][$product_id])) {
 
-            $this->incNum($product_id, $qty);
+            $this->incQty($product_id, $qty);
 
             return;
         }
@@ -80,7 +80,7 @@ class Cart {
 
      */
 
-    public function incNum($product_id, $qty = 1) {
+    public function incQty($product_id, $qty = 1) {
 
         if (isset($_SESSION['cart'][$product_id])) {
 
@@ -128,6 +128,18 @@ class Cart {
     public function getItem($product_id) {
 
         return $_SESSION['cart'][$product_id];
+    }
+    
+    /**
+     * 
+     * 
+     * 获取单个商品的数量
+     * 
+     */
+    
+    public function getsQty($product_id){
+        
+        return $_SESSION['cart'][$product_id][$qty];
     }
 
     /*
