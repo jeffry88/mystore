@@ -28,7 +28,7 @@ if(empty($_SESSION['username'])){
             <div class="sidebar">
                 <?php include 'sidebar.php'; ?>
             </div>
-            <div class="main">
+            <div class="product">
                 
                 <?php include'main.php'; ?>
             </div>
@@ -38,5 +38,6 @@ if(empty($_SESSION['username'])){
         <script src='js/leftnav.js'></script>
         <script src="layui/layui.js"></script>
         <script src="js/product.js"></script>
+        <script src="js/user.js"></script>
     </body>
 </html>

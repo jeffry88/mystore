@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 ?>
-<div style="width:20%;color: #FFF;float: left;">
+<div style="width:20%;color: #FFF;float: left;position: relative;top: 20px;">
     <h2>线上书店后台管理系统</h2> 
 </div>
 <div class="user-info">

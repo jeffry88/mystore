@@ -22,12 +22,10 @@ try {
     echo "Error: " . $e;
 }
 
-
 $page = intval($_POST['pageNum']);
 //$method = $_POST['method'];
-//查看商品
-    //$page = 0;
-    $sql = "SELECT count(*) as tt FROM `je_product`";
+//查看用户
+    $sql = "SELECT count(*) as tt FROM `je_user`";
     $stmt = $db->query($sql);
     $stmt->execute();
     $rs = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -41,17 +39,19 @@ $page = intval($_POST['pageNum']);
     $arr['pageSize'] = $pageSize;
     $arr['totalPage'] = $totalPage;
 
-    $sql = "select product_id,product_name,price,description,qty from je_product order by product_id asc limit $startPage,$pageSize";
+    $sql = "select * from je_user order by user_id asc limit $startPage,$pageSize";
     $stmt = $db->query($sql);
     $stmt->execute();
     $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
     foreach ($list as $key => $val) {
         $arr['list'][] = array(
-            'product_id' => $val['product_id'],
-            'product_name' => $val['product_name'],
-            'price' => $val['price'],
-            'description' => $val['description'],
-            'qty' => $val['qty'],
+            'user_id' => $val['user_id'],
+            'user_name' => $val['user_name'],
+            'sex' => $val['sex'],
+            'email' => $val['email'],
+            'money' => $val['money'],
+            'phone' => $val['phone'],
+            'user_addr' =>$val['user_addr'],
         );
     }
     //print_r($arr);
