@@ -29,7 +29,7 @@ $stmt->execute();
 $rs = $stmt->fetch(PDO::FETCH_ASSOC);
 $total = $rs['tt'];
 
-$pageSize = 6; //每页显示数
+$pageSize = 12; //每页显示数
 $totalPage = ceil($total/$pageSize); //总页数
 //die($totalPage);
 $startPage = $page*$pageSize;
@@ -37,7 +37,7 @@ $arr['total'] = $total;
 $arr['pageSize'] = $pageSize;
 $arr['totalPage'] = $totalPage;
 
-$sql = "select product_id,product_name,price from je_product order by product_id asc limit $startPage,$pageSize";
+$sql = "select product_id,product_name,price,description,qty from je_product order by product_id asc limit $startPage,$pageSize";
 $stmt = $db->query($sql);
 $stmt->execute();
 $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -46,6 +46,8 @@ foreach ($list as $key => $val) {
         'product_id' => $val['product_id'],
         'product_name' => $val['product_name'],
         'price' => $val['price'],
+        'description' => $val['description'],
+        'qty' => $val['qty'],
      );
 }
 //print_r($arr);
