@@ -1,7 +1,7 @@
 .header{
     height: 65px;
     width: auto;
-    background: #71B6F9;
+    background: #393D49;
 }
 .sidebar{
 
@@ -32,14 +32,11 @@
 }
 #list{
     width:100%;
-    height:530px;
+    height:auto;
     position:relative
 }
 #list ul li{
-    float:left;
-    width:220px;
-    height:260px;
-    margin:2px
+    margin:20px
 }
 #list ul li img{
     width:220px;
@@ -74,3 +71,18 @@
     -webkit-box-shadow:1px 1px 2px rgba(0,0,0,.2);
     box-shadow:1px 1px 2px rgba(0,0,0,.2);
 }
+.usermess{
+    margin: 74px 405px;
+    width: 400px;
+    height: 500px;
+    background-color: #e2e2e2;
+    text-align: center;
+}
+.userimag{
+    margin-bottom: 52px;
+}
+/*#usermess ul li{
+    width:220px;
+    height:260px;
+    margin:2px
+}*/

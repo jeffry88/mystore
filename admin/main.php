@@ -7,7 +7,7 @@
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="dist/layui/css/layui.css">
+    <link rel="stylesheet" href="layui\css\layui.css">
     <style type="text/css">
 
     </style>
@@ -19,8 +19,12 @@
     <div id="productshow">
 
         <div id="list">
-            <div id="product_table"><h1 style="color: #009cda;position: relative;top: 100px;">欢迎使用jeffry的后台管理系统！</h1></div>
+            <div id="product_table"><h1 style="color: #393D49;position: relative;top: 100px;">欢迎使用jeffry的后台管理系统！</h1>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
         </div>
+        <div class="clear"></div>
         <div id="pagecount"></div>
 
     </div>

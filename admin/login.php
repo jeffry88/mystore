@@ -30,7 +30,7 @@ include 'conn/conn.php';
                     </div>
                     <div class="login-ic">                      
                         <i ></i>
-                        <input type="text"  value="用户名/邮箱" id="username" name="username" onfocus="this.value = '';" onblur="if (this.value == '') {
+                        <input type="text"  value="用户名" id="username" name="username" onfocus="this.value = '';" onblur="if (this.value == '') {
                                     this.value = 'User name';
                                 }"/>
                         <div class="clear"> </div>

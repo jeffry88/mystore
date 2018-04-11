@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$(document).ready($("#custom").click(function(){
-        var curPage = 1; //当前页码
+/////////////////////查看客户////////////////
+$(document).ready($("#custom").click(function () {
+    var curPage = 1; //当前页码
     var total, pageSize, totalPage;
 //获取数据
     function getData(page) {
         $.ajax({
             type: 'POST',
             url: 'eduser.php',
-            data: {'pageNum': page - 1},
+            data: {'pageNum': page - 1, 'method': "custom"},
             dataType: 'json',
 //            beforeSend: function () {
 //                $("#list #product_table").append("<li id=\'loading\'>loading...</li>");
@@ -28,33 +29,33 @@ $(document).ready($("#custom").click(function(){
                 var tr = "";
                 var list = json.list;
                 table = "<table class=\"layui-table\">"
-                +"<colgroup>"
-                +"<col width=\"150\">"
-                +    "<col width=\"200\">"
-                +    "<col>"
-                +"</colgroup>"
-                +"<thead>"
-                +    "<tr>"
-                +        "<th>用户id</th>"
-                +        "<th>用户名</th>"
-                +        "<th>性别</th>"
-                +        "<th>email</th>"
-                +        "<th>余额</th>"
-                +        "<th>电话号码</th>"
-                +        "<th>住址</th>"
-                +    "</tr>" 
-                +"</thead>"
-                +"<tbody></tbody>"
-                + "</table>";
+                        + "<colgroup>"
+                        + "<col width=\"150\">"
+                        + "<col width=\"200\">"
+                        + "<col>"
+                        + "</colgroup>"
+                        + "<thead>"
+                        + "<tr>"
+                        + "<th>用户id</th>"
+                        + "<th>用户名</th>"
+                        + "<th>性别</th>"
+                        + "<th>email</th>"
+                        + "<th>余额</th>"
+                        + "<th>电话号码</th>"
+                        + "<th>住址</th>"
+                        + "</tr>"
+                        + "</thead>"
+                        + "<tbody></tbody>"
+                        + "</table>";
                 $("#list #product_table").append(table);
                 $.each(list, function (index, array) { //遍历json数据列
                     //li += "<li><a href='#'><img src='" + array['pic'] + "'>" + array['title'] + "</a></li>";
-                    tr += "<tr><td>" + array['user_id']+ "</td><td>" 
-                            + array['user_name']+"</td><td>" 
-                            + array['sex'] + "</td><td>" 
-                            + array['email']+"</td><td>"
-                            + array['money']+"</td><td>"
-                            + array['phone']+"</td><td>"
+                    tr += "<tr><td>" + array['user_id'] + "</td><td>"
+                            + array['user_name'] + "</td><td>"
+                            + array['sex'] + "</td><td>"
+                            + array['email'] + "</td><td>"
+                            + array['money'] + "</td><td>"
+                            + array['phone'] + "</td><td>"
                             + array['user_addr'] + "</td></tr>";
                 });
                 $("#list tbody").append(tr);
@@ -106,4 +107,60 @@ $(document).ready($("#custom").click(function(){
         });
     });
 }));
+///////////////////////end///////////////////////////////
 
+
+
+$(document).ready($("#mymsg").click(function () {
+//获取数据
+
+        $.ajax({
+            type: 'POST',
+            url: 'eduser.php',
+            data: {'method': "mymsg"},
+            dataType: 'json',
+//            beforeSend: function () {
+//                $("#list #product_table").append("<li id=\'loading\'>loading...</li>");
+//            },
+            success: function (json) {
+                //alert(page);
+                $("#list #product_table").empty();
+                $("#pagecount").empty();
+                
+//                total = json.total; //总记录数
+//                pageSize = json.pageSize; //每页显示条数
+//                curPage = page; //当前页
+//                totalPage = json.totalPage; //总页数
+                var msg = "";
+                //var tr = "";
+                //array = eval("(" + json + ")");
+                 var $this = $("#list #product_table");
+                 var list = json.list;
+                console.log($this);
+                $.each(list, function (index, array) { //遍历json数据列
+                    //li += "<li><a href='#'><img src='" + array['pic'] + "'>" + array['title'] + "</a></li>";
+                    $admin_id = array['admin_id'] ;
+                    $admin_name = array['admin_name'] ;
+                    $sex = array['sex'] ;
+                });
+                msg = "<div class='usermess'id='usermess'>"
+                        + "<div class='userimag'>"
+                        +"<img src='img/user03.png'>"
+                        + "</div>"
+                        + "<ul>"
+                        + "<li>用户id:"+$admin_id+"</li>"
+                        + "<li>用户名："+$admin_name+"</li>"
+                        + "<li>性别："+$sex+"</li>"
+                        + "</ul>"
+                        +"<div class='clear'></div>"
+                        + "</div>";
+//                var $this = $("#list #product_table");
+//                console.log($this);
+                $("#list #product_table").html(msg);
+                
+//                $("#list tbody").append(tr);
+            }
+        });
+
+
+}));

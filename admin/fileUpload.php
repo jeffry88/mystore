@@ -1,13 +1,13 @@
 <?php
 header("content-type:text/html;charset:utf-8");
-$fileInfo = $_FILES["myFile"];
+$fileInfo = $_FILES["file"];
 
 $filename = $fileInfo["name"];
 $type = $fileInfo["type"];
 $error = $fileInfo["error"];
 $size = $fileInfo["size"];
 $tmp_name = $fileInfo["tmp_name"];
-$maxSize=2*1024*1024;//允许的最大值
+$maxSize=4*1024*1024;//允许的最大值
 $allowExt=array("jpeg","jpg","gif","png");
 $flag = true;//检测是否为真实的图片类型
 
@@ -33,7 +33,7 @@ if($error == 0){
  }
 
  //创建目录
- $path = "D:/wamp64/www/mystore/img/";
+ $path = "D:/wamp64/www/mystore/img/product/";
  if(!file_exists($path)){
  mkdir($path,0777,true);
  chmod($path,0777);
@@ -43,7 +43,10 @@ if($error == 0){
  $uniName = md5(uniqid(microtime(true),true)).".".$ext;
  $destination = $path.$uniName;
  if(@move_uploaded_file($tmp_name,$destination)){
- echo "上传成功".$uniName;
+     $array = array();
+     $array['success'] = "上传成功！";
+     $array['uniName'] = $uniName;
+ echo json_encode($array);
  }else{
  echo "上传失败";
  }

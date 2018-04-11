@@ -46,11 +46,9 @@
                 </ul>
                     <div id="main-sub-nav" style="position: relative;left:100px;">
                             <ul class="nav navbar-nav" style="position: relative; left: 190px;">
-                                <li style="margin-left: 25px;"><a href="#" ><span class="glyphicon glyphicon-search">搜索</span></a></li>
                                 <li style="margin-left: 25px;"><a href="cart.php" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
                                 <li style="margin-left: 25px;"><a href="#"><img src=""/><?php echo "你好：". $_SESSION['username'];?></a></li>
-                                <li style="margin-left: 25px;"><a href="logout.php">退出</a></li>
-                                
+                                <li style="margin-left: 25px;"><a href="logout.php">退出</a></li>                                
                             </ul>
                         </div>
                        

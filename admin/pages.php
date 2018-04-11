@@ -24,8 +24,10 @@ try {
 
 
 $page = intval($_POST['pageNum']);
-//$method = $_POST['method'];
+$method = $_POST['method'];
+
 //查看商品
+if($method == "showpro"){
     //$page = 0;
     $sql = "SELECT count(*) as tt FROM `je_product`";
     $stmt = $db->query($sql);
@@ -54,5 +56,37 @@ $page = intval($_POST['pageNum']);
             'qty' => $val['qty'],
         );
     }
+}
     //print_r($arr);
+
+//查看已售出商品
+if($method == "saled"){
+    //$page = 0;
+    $sql = "SELECT count(DISTINCT product_id) as tt FROM `je_order_detail`";
+    $stmt = $db->query($sql);
+    $stmt->execute();
+    $rs = $stmt->fetch(PDO::FETCH_ASSOC);
+    $total = $rs['tt'];
+
+    $pageSize = 12; //每页显示数
+    $totalPage = ceil($total / $pageSize); //总页数
+    //die($totalPage);
+    $startPage = $page * $pageSize;
+    $arr['total'] = $total;
+    $arr['pageSize'] = $pageSize;
+    $arr['totalPage'] = $totalPage;
+
+    $sql = "SELECT DISTINCT product_id,product_name,price,sum(product_qty) FROM je_order_detail GROUP BY  product_id asc limit $startPage,$pageSize";
+    $stmt = $db->query($sql);
+    $stmt->execute();
+    $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    foreach ($list as $key => $val) {
+        $arr['list'][] = array(
+            'product_id' => $val['product_id'],
+            'product_name' => $val['product_name'],
+            'price' => $val['price'],
+            'qty' => $val['sum(product_qty)'],
+        );
+    }
+}
     echo json_encode($arr);

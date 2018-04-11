@@ -25,7 +25,8 @@ $password = isset($_POST['password']) ? $_POST['password'] : "";
                header("Location:index.php");
             
         } else{
-            header("Location:login.php?err=1");
+            //header("Location:login.php?err=1");
+            //echo"111";
         }
     } else {
         if($username == $row1['email'] && $password === $row1['user_psw']){
@@ -36,5 +37,5 @@ $password = isset($_POST['password']) ? $_POST['password'] : "";
             header("Location:login.php?err=1");
         }
     }
-    mysqli_close($con);
+    mysqli_close($conn);
     ?>

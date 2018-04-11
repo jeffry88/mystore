@@ -9,6 +9,6 @@
     <h2>线上书店后台管理系统</h2> 
 </div>
 <div class="user-info">
-    <span><img style="height:40px;" src="img/frog.png"/><div style="position: relative;top: -28px;right: 85px;"><?php echo "欢迎您".$_SESSION['username'];?></div></span>
+    <span><img style="height:40px;" src="img/frog.png"/><div style="position: relative;top: -28px;right: 85px;color:#FFF;"><?php echo "欢迎您".$_SESSION['username'];?></div></span>
 </div>
 

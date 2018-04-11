@@ -29,9 +29,15 @@ ini_set('session.gc_maxlifetime',21600);
 
         <?php
          //session_start();
+         include 'conn/conn.php';
         //$username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
-        //$_SESSION['name'] = $username;
-        if (isset($_SESSION['username'])) {
+        $username = $_SESSION['username'];
+        $sql = "select user_name from je_user where user_name = '$username'";
+        $result = $conn->query($sql);
+        $sql2 = "select email from je_user where email = '$username'";
+        $request1 = $conn->query($sql2);
+        //$row = $result->fetch_array();
+        if ($result||$request1) {
             //echo $_SESSION['username'];
             include 'loginhead.php';
         } else {
