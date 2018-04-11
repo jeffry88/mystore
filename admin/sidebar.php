@@ -31,9 +31,9 @@
                 </ul>
             </li>
             <li>
-                <div class="link"><i class="fa fa-star"></i>库存管理<i class="fa fa-chevron-down"></i></div>
+                <div class="link"><i class="fa fa-star"></i>我的<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
-                    <li id="editqty"><a>管理库存</a></li>
+                    <li id="mymsg"><a>个人信息</a></li>
                 </ul>
             </li>
             <!-- 视情况而定 

@@ -3,7 +3,6 @@
 header("Content-Type: text/html;charset=utf-8");
 //error_reporting(E_ALL); 
 //ini_set('display_errors', true);
-session_start();
 date_default_timezone_set("PRC");   //系统使用北京时间
 
 define('DBHOST', 'localhost');
@@ -22,13 +21,11 @@ try {
 } catch (PDOException $e) {
     echo "Error: " . $e;
 }
-$admin_name = $_SESSION['username'];
-$method = $_POST['method'];
-if ($method == "custom") {
-    $page = intval($_POST['pageNum']);
+
+$page = intval($_POST['pageNum']);
 //$method = $_POST['method'];
 //查看用户
-    $sql = "SELECT count(*) as tt FROM `je_user`";
+    $sql = "SELECT count(*) as tt FROM `je_order`";
     $stmt = $db->query($sql);
     $stmt->execute();
     $rs = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -42,35 +39,24 @@ if ($method == "custom") {
     $arr['pageSize'] = $pageSize;
     $arr['totalPage'] = $totalPage;
 
-    $sql = "select * from je_user order by user_id asc limit $startPage,$pageSize";
+    $sql = "select je_order.order_id,product_id,product_name,price,product_qty,user_name,consignee,phone,address,price_total from je_order
+             inner join je_order_detail on je_order.order_id=je_order_detail.order_id order by order_id asc limit $startPage,$pageSize";
     $stmt = $db->query($sql);
     $stmt->execute();
     $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
     foreach ($list as $key => $val) {
         $arr['list'][] = array(
-            'user_id' => $val['user_id'],
+            'order_id' => $val['order_id'],
+            'product_id' => $val['product_id'],
+            'product_name' => $val['product_name'],
+            'price' => $val['price'],
+            'product_qty' => $val['product_qty'],
             'user_name' => $val['user_name'],
-            'sex' => $val['sex'],
-            'email' => $val['email'],
-            'money' => $val['money'],
+            'consignee' => $val['consignee'],
             'phone' => $val['phone'],
-            'user_addr' => $val['user_addr'],
+            'address' => $val['address'],
+            'price_total' => $val['price_total'],
         );
     }
     //print_r($arr);
     echo json_encode($arr);
-}
-if ($method == "mymsg") {
-    $sql = "select * from je_admin where admin_name='$admin_name'";
-    $stmt = $db->query($sql);
-    $stmt->execute();
-    $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    foreach ($list as $key => $val) {
-        $arr['list'][] = array(
-            'admin_id' => $val['admin_id'],
-            'admin_name' => $val['admin_name'],
-            'sex' => $val['sex'],
-        );
-    }
-     echo json_encode($arr);
-}

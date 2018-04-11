@@ -3,25 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/wamp64/www/mystore/product.php</file>
-            <file>file:/D:/wamp64/www/mystore/product_header.php</file>
-            <file>file:/D:/wamp64/www/mystore/text1.php</file>
-            <file>file:/D:/wamp64/www/mystore/loginaction.php</file>
-            <file>file:/D:/wamp64/www/mystore/cart.php</file>
-            <file>file:/D:/wamp64/www/mystore/up.php</file>
-            <file>file:/D:/wamp64/www/mystore/Cart_Class.php</file>
-            <file>file:/D:/wamp64/www/mystore/registeraction.php</file>
-            <file>file:/D:/wamp64/www/mystore/upload.html</file>
-            <file>file:/D:/wamp64/www/mystore/addcart_action.php</file>
-            <file>file:/D:/wamp64/www/mystore/pay_action.php</file>
-            <file>file:/D:/wamp64/www/mystore/pay.php</file>
-            <file>file:/D:/wamp64/www/mystore/fiction_book.php</file>
-            <file>file:/D:/wamp64/www/mystore/settlement.php</file>
-            <file>file:/D:/wamp64/www/mystore/test/test4.php</file>
-            <file>file:/D:/wamp64/www/mystore/index.php</file>
-            <file>file:/D:/wamp64/www/mystore/conn/conn.php</file>
-            <file>file:/D:/wamp64/www/mystore/css/style.css</file>
-            <file>file:/D:/wamp64/www/mystore/buy_success.php</file>
+            <file>file:/D:/wamp64/www/mystore/admin/index.php</file>
+            <file>file:/D:/wamp64/www/mystore/admin/main.php</file>
+            <file>file:/D:/wamp64/www/mystore/admin/js/product.js</file>
+            <file>file:/D:/wamp64/www/mystore/login.php</file>
+            <file>file:/D:/wamp64/www/mystore/admin/sidebar.php</file>
         </group>
     </open-files>
 </project-private>

@@ -33,7 +33,7 @@ a {
     height: 60px;
     line-height: 60px;
     font-size: 20px;
-    color: #f39800;
+    color: #009688;
     font-weight: bold;
     cursor: pointer;
 }
@@ -94,11 +94,11 @@ h1 a {
 }
 
 .accordion li.open .link {
-    color: #f39800;
+    color: #009688;
 }
 
 .accordion li.open i {
-    color: #f39800;
+    color: #009688;
 }
 
 .accordion li.open i.fa-chevron-down {
@@ -133,7 +133,7 @@ h1 a {
 }
 
 .submenu a:hover ,.submenu li.current a{
-    background: #f39800;
+    background: #009688;
     color: #FFF;
     text-decoration: none;
 }
