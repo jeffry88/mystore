@@ -47,5 +47,35 @@ if (empty($row)) {
         <script src="js/product.js"></script>
         <script src="js/user.js"></script>
         <script src="js/order.js"></script>
+<<<<<<< HEAD (e022015) - 后台管理员功能基本完成，再进行一些细节的修改，
+
+=======
+        <script type="text/javascript">
+
+            layui.use('upload', function () {
+                var $ = layui.jquery
+                        , upload = layui.upload;
+                upload.render({
+                    elem: '#test8'
+                    , url: '/upload/'
+                    , auto: false
+                            //,multiple: true
+                    , bindAction: '#test9'
+                    , done: function (res) {
+                        console.log(res)
+                    }
+                });
+            });
+//            layui.use('form', function () {
+//               // var form = layui.form;
+//
+//                //监听提交
+//                form.on('submit(formDemo)', function (data) {
+//                    layer.msg(JSON.stringify(data.field));
+//                    return false;
+//                });
+//            });
+        </script>
+>>>>>>> origin/master (4937417) - Merge origin/m
     </body>
 </html>
