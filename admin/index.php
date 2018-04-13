@@ -18,6 +18,7 @@ if (empty($row)) {
 <html>
     <head>
         <meta charset="UTF-8">
+        <title>Jeffry's store 后台管理系统</title>
         <!-- Iconos -->
         <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
         <link rel="stylesheet" href="css/leftnav.css" media="screen" type="text/css"/>

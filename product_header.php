@@ -1,7 +1,7 @@
 <div id="product-header">
     <div class="search bar1"> 
-        <form> 
-            <input type="text" placeholder="搜索好书..." /> 
+        <form action="searchProduct.php" method="POST"> 
+            <input type="text" placeholder="搜索好书..." name="book" /> 
             <button type="submit"></button> 
         </form> 
     </div> 

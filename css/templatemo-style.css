@@ -1024,3 +1024,36 @@ footer .connect-us ul li a:hover {
                 width:500px;
                 height: 280px;
 	}
+.drop-menu {
+    position: relative; /* 使菜单跟hover对象保持相对位置 */
+    display: inline-block; /* 使菜单形成自然宽度而不会撑满屏幕 */
+    /* 其他的关于整体的样式控制 */
+    margin-top: 20px;
+}
+.hover-btn {
+    cursor: pointer; /* hover时鼠标的变化提示 */
+    width: 65px;
+    /* 其他的关于hover对象的样式控制 */
+}
+.drop-content {
+    display: none; /* 默认不显示菜单 */
+    position: absolute; /* 跟hover对象的relative对应 */
+    z-index: 1; /* 保证菜单在最上层，不被其他元素覆盖 */
+    width: 100px;
+    background-color: #e2e2e2;
+    /* 其他的关于下拉菜单的样式控制 */
+}
+
+.drop-content ul li{
+    background: #dddddd;
+    margin-top: 7px;
+}
+
+/* 以下开始利用hover选择器实现鼠标悬停时显示下拉菜单 */
+.drop-menu:hover .drop-content {
+    display: block; /* 悬停时变为显示 */
+}
+.drop-menu:hover .hover-btn {
+    /* 悬停时hover对象的样式控制 */
+
+}

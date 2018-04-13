@@ -44,15 +44,28 @@
                     <li><a href="art.php" >文艺</a></li>
                     <li><a href="children.php">儿童读物</a></li>
                 </ul>
-                    <div id="main-sub-nav" style="position: relative;left:100px;">
-                            <ul class="nav navbar-nav" style="position: relative; left: 190px;">
-                                <li style="margin-left: 25px;"><a href="cart.php" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
-                                <li style="margin-left: 25px;"><a href="#"><img src=""/><?php echo "你好：". $_SESSION['username'];?></a></li>
-                                <li style="margin-left: 25px;"><a href="logout.php">退出</a></li>                                
-                            </ul>
+                <div id="main-sub-nav" style="position: relative;left:100px;">
+                    <ul class="nav navbar-nav" style="position: relative; left: 190px;">
+                        <li style="margin-left: 25px;"><a href="cart.php" ><span class="glyphicon glyphicon-shopping-cart">购物车</span></a></li>
+                        <li>
+                        <div class="drop-menu">
+                            <div class="hover-btn">
+                                <img style="height:40px;" src="img/frog.png"/>
+                            </div>
+                            <div class="drop-content">
+                                <ul>
+                                    <li>您好<?php echo $_SESSION['username'] ?></li>
+                                    <li><a href="usermsg.php">个人信息</a></li>
+                                    <li><a href="myorder.php">我的订单</a></li>
+                                    <li><a href="logout.php">退出登录</a></li>
+                                </ul>
+                            </div> 
                         </div>
-                       
-               
+                        </li>
+                    </ul>
+                </div>
+
+
             </div>
             <!--/.navbar-collapse-->
         </nav>

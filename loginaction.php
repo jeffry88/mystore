@@ -25,13 +25,13 @@ $password = isset($_POST['password']) ? $_POST['password'] : "";
                header("Location:index.php");
             
         } else{
-            //header("Location:login.php?err=1");
+            header("Location:login.php?err=1");
             //echo"111";
         }
     } else {
         if($username == $row1['email'] && $password === $row1['user_psw']){
             session_start();
-            $_SESSION['username'] = $row1['name'];
+            $_SESSION['username'] = $row1['user_name'];
             header("Location:index.php");
         } else {
             header("Location:login.php?err=1");

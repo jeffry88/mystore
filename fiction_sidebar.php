@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link href="css/basic.css" rel="stylesheet" type="text/css">
+<link href="css/basic_01.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/sidebar.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.min.js"></script>

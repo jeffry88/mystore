@@ -556,6 +556,7 @@ $(function () {
                 }
             },
             error: function (array) {
+                alert(array);
                 console.log("error");
             }
         });
@@ -670,8 +671,9 @@ $(function () {
                 }
             });
         } else {
-            return false;//取消提交
             alert("表格数据不能为空！");
+            return false;//取消提交
+            
         }
     });
 

@@ -52,7 +52,7 @@
                         </div>
                         <div class="buy_box_button">
                             <a href="<?php echo "addcart_action.php?id=".$product_id?>" class="btn btn_red">加入购物车</a> 
-                            <a href="check_login.php" class="buy_now_btn btn_b_red">立即购买</a>
+                            <a href="<?php echo "check_login.php?id=".$product_id?>" class="buy_now_btn btn_b_red">立即购买</a>
                             <div class="clear"></div>
                         </div>
                     </div>

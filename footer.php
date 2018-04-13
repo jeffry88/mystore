@@ -25,7 +25,7 @@
                     <div class="line-dec"></div> 
                     <div class="footer">
                         <ul>
-                            <li><a href="https://github.com/jeffry88" title="About us">我的github</a></li>
+                            <li><a href="###" title="About us">我的github</a></li>
                             <li><a href="###" title="Contact us">邮箱：deng950209@gmail.com</a></li>
                             
                         </ul>
@@ -39,7 +39,7 @@
                     <div class="footer">
                         <ul>
                             <li><a href="http://www.jeffry.gq" title="About us">个人网站</a></li>
-                            
+                            <li><a href="###" title="About us">微博</a></li>
                         </ul>
                     </div>
                 </div>

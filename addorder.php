@@ -9,18 +9,6 @@ ini_set('session.save_path', '/php_sessions/');
 ini_set('session.gc_maxlifetime', 21600);
 include_once 'Cart_Class.php';
 include 'headlink.php';
-include_once("conn/conn.php");
-include_once 'Cart_Class.php';
-$cart = new Cart();
-//$cart = Cart::getCart('_test');
-//$id = $product_id ;
-//$qty = 1;
-$product_id = $_GET['id'];
-//echo $product_id;
-$sql = "select product_name,price,product_pic from je_product where product_id = $product_id";
-$res = mysqli_query($conn, $sql);
-$row = mysqli_fetch_array($res);
-$cart->addItem($product_id,$row['product_name'],$row['price'],'1',$row['product_pic']);
 ?>
 <div>
     <div class="showbooks">

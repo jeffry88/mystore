@@ -229,7 +229,7 @@ a.btn_red {
     margin:25px 0;
     width: 85%;
     position: relative;
-    
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -298,8 +298,29 @@ div .check_btn input{
     left:54px;
 }
 .cartdata{
-   
+
 }
 div .order_mes li{
     margin-top: 10px;
+}
+.searchdata{
+    width: 78%;
+    margin: 10px auto;
+}
+.searchdata_img{
+    float: left;
+    width: 24%;
+    margin: 10px;
+}
+.itemdes{
+    float: left;
+    position: relative;
+    top: 55px;
+}
+.user-info{
+    width: 68%;
+    margin: 56px auto;
+    text-align: center;
+    background: #e2e2e2;
+    line-height: 275%;
 }
