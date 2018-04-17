@@ -48,5 +48,4 @@ if (empty($row)) {
         <script src="js/product.js"></script>
         <script src="js/user.js"></script>
         <script src="js/order.js"></script>
-    </body>
-</html>
+
